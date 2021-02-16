@@ -5,7 +5,7 @@ import {
 	Route,
 	Redirect,
 } from "react-router-dom";
-import Login from '../pages/auth/Login';
+import Login from '../pages/auth/login/Login';
 import Register from '../pages/auth/Register';
 import RecoverPassword from '../pages/auth/RecoverPassword';
 
