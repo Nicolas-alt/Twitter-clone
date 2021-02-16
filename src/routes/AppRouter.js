@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Login from '../pages/auth/Login';
 import Register from '../pages/auth/Register';
+import RecoverPassword from '../pages/auth/RecoverPassword';
 
 const AppRouter = () => {
 	return (
@@ -14,6 +15,7 @@ const AppRouter = () => {
 			<Switch>
 				<Route exact path="/auth/login" component={Login} />
 				<Route exact path="/auth/register" component={Register} />
+				<Route exact path="/auth/recover" component={RecoverPassword} />
 				<Route exact path="/users"  component={Login} />
 				<Redirect to="/auth/login" />
 			</Switch>
