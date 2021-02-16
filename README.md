@@ -1,7 +1,8 @@
 <div align="center">
-  <h1> Twitter-clone </h1>
+  <h1>Dev-Tweet</h1>
 </div>
-This project is a copy of a real Twitter app
+
+Twitter like social media, where developers can Hang out
 
 ## Development
 Want to contribute? Great! Make me a pull request.
@@ -21,8 +22,6 @@ It's works on
 - react-router-dom
 - react-helmet
 - node-sass
-
-## Back-end  [here]()
 
 ## App complete [here]()
 
