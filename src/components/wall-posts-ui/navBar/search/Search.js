@@ -1,10 +1,11 @@
 import React from 'react'
+import './search.scss'
 
 const Search = () => {
 	return (
-		<form>
-				<i className='bx bx-search' ></i>
-				<input type="text" />
+		<form className="form-nav-search">
+				<i className='bx bx-search i-form-Search'></i>
+				<input type="text" placeholder="Search..." />
 		</form>
 	)
 }

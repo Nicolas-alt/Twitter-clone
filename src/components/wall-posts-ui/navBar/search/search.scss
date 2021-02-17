@@ -1,0 +1,36 @@
+.form-nav-search {
+	background-color: #283143;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	height: 60%;
+	width: 200px;
+	padding-left: 10px;
+
+	.i-form-Search {
+		color: #4e6183;
+		font-size: 1.2em;
+		background-color: transparent;
+		margin: 0;
+	}
+
+	input {
+		background-color: transparent;
+		border: none;
+		height: 100%;
+		width: 100%;
+		caret-color: white;
+	}
+
+	input:focus {
+		outline: none;
+		outline-width: 0;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+
+	::placeholder{
+		color: #4e6183;
+	}
+}
