@@ -18,10 +18,11 @@ $inputColor: #3d5b83;
 		background-color: #68a1e8;
 
 		h2 {
-			color: white;
 			font-size: 3.5rem;
 			text-shadow: 5px 3px #3180e1;
 			text-align: center;
+			color: white;
+			padding: 0 5px;
 		}
 	}
 
@@ -31,8 +32,8 @@ $inputColor: #3d5b83;
 
 		h2 {
 			text-align: center;
-			color: white;
 			font-weight: normal;
+			color: white;
 		}
 
 		// icon input

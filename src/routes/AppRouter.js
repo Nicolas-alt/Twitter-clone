@@ -10,6 +10,7 @@ import Register from '../pages/auth/Register';
 import RecoverPassword from '../pages/auth/RecoverPassword';
 import WallPost from '../pages/wall-posts/WallPost';
 import AuthProvider from '../context/AuthProvider';
+import Profile from '../components/userProfile/profile/Profile';
 
 const AppRouter = () => {
 	return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
 					<Route exact path="/auth/login" component={Login} />
 					<Route exact path="/auth/register" component={Register} />
 					<Route exact path="/auth/recover" component={RecoverPassword} />
+					<Route exact path="/user" component={Profile} />
 					<Route exact path="/post" component={WallPost} />
 					<Redirect to="/auth/login" />
 				</Switch>
