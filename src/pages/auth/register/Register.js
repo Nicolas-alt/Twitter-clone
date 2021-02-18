@@ -8,6 +8,14 @@ import Step3 from './step3/Step3'
 
 const Register = () => {
 	const [step, setStep] = useState(1)
+	const [form, setform] = useState({
+			firstName: '',
+			lastName: '',
+			email: '',
+			userName: '',
+			password: '',
+			confirmPassword: ''
+	})
 
 	const handleNextStep = () => {
 		setStep(step + 1)
@@ -15,6 +23,14 @@ const Register = () => {
 
 	const handleBackStep = () =>{
 		setStep(step - 1)
+	}
+
+	const handleInputChange = ({target}) =>{
+		const { name, value} = target;
+		setform({
+			...form,
+			[name]:value
+		})
 	}
 
 	return (
@@ -29,9 +45,9 @@ const Register = () => {
 				{step === 3 && <p>Hola mundo</p>}
 				<h3>Step {step} of 3</h3>
 				<div className="div-form-inputs">
-					{step === 1 && <Step1 />}
-					{step === 2 && <Step2 />}
-					{step === 3 && <Step3 />}
+					{step === 1 && <Step1 form={form} handleInputChange={handleInputChange} />}
+					{step === 2 && <Step2 form={form} handleInputChange={handleInputChange} />}
+					{step === 3 && <Step3 form={form} handleInputChange={handleInputChange} />}
 					<Buttons
 						step={step}
 						handleNextStep={handleNextStep}
