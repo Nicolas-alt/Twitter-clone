@@ -6,7 +6,7 @@ import {
 	Redirect,
 } from "react-router-dom";
 import Login from '../pages/auth/login/Login';
-import Register from '../pages/auth/Register';
+import Register from '../pages/auth/register/Register';
 import RecoverPassword from '../pages/auth/RecoverPassword';
 import WallPost from '../pages/wall-posts/WallPost';
 import AuthProvider from '../context/AuthProvider';
